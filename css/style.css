@@ -107,19 +107,21 @@ a{
     font-size: 20px;
 }
 
-.table__item{
-    position: relative;
+.table__item-content{
+    /* position: relative; */
     text-align: center;
     font-size: 18px;
-    border-bottom: 2px solid #fff;
+    /* border-bottom: 2px solid #fff; */
 }
+
+
 
 .btn-delited {
     opacity: 0;
     content: '';
-    position: absolute;
+    /* position: absolute; */
     visibility: hidden;
-    margin-top: 30px;
+    /* margin-top: 30px; */
     background: rgb(14, 14, 14);
     padding: 2px 10px;
     color: #fff;
@@ -136,6 +138,7 @@ a{
 .btn-delited:nth-child(2){
     margin-top: 55px;
 }
+
 
 
 .footer-link{

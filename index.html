@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="/css/style.css">
     <script src="js/script.js" defer></script>
     <title>Gun</title>
 </head>
@@ -30,7 +30,7 @@
                         <th class="table__title-item">Числиться в базе</th>
                         <th class="table__title-item">Засвет</th>
                     </tr>
-                    <tr class="table__item">
+                    <!-- <tr class="table__item">
                         <td class="table__item-content num">1</td>
                         <td class="table__item-content name">Ak-74m</td>
                         <td class="table__item-content sum">50000</td>
@@ -40,6 +40,7 @@
                         <td class="table__item-content number-gun">Есть</td>
                         <td class="table__item-content base">Нет</td>
                         <td class="table__item-content crime">Нет</td>
+                        <td class="table__item-content"><button class="btn-delited">Удалить</button></td>
                     </tr>
                     <tr class="table__item">
                         <td class="table__item-content num">2</td>
@@ -51,9 +52,8 @@
                         <td class="table__item-content number-gun">Нету</td>
                         <td class="table__item-content base">Да</td>
                         <td class="table__item-content crime">Нет</td>
-                    </tr>
-                    <button class="btn-delited">Удалить</button>
-                    <button class="btn-delited">Удалить</button>
+                        <td class="table__item-content"><button class="btn-delited">Удалить</button></td>
+                    </tr> -->
                 </table>
                 <div class="table-btn">
                     <button class="btn table__btn-trig">Добавить</button>
@@ -75,39 +75,39 @@
         <div class="modal__dialog">
             <button class="modal__close"></button>
             <h3 class="modal__title">Напишите какой товар хотите добавить</h3>
-            <form autocomplete="off" class="form modal__form">
+            <form class="form modal__form">
                 <div class="input-group modal__input-group">
                     <label for="user-name" class="label form__label label-light">Модель товара</label>
                     <input type="text" name="userName" class="input" id="modal__user-name" placeholder="Ак-47">
                 </div>
 
                 <div class="input-group modal__input-group">
-                    <label for="user-phone" class="label form__label label-light">Цена</label>
-                    <input type="number" name="userPhone" class="input" id="modal__user-sum" placeholder="50000">
+                    <label for="user-price" class="label form__label label-light">Цена</label>
+                    <input type="number" name="userPrice" class="input" id="modal__user-sum" placeholder="50000">
                 </div>
 
                 <div class="input-group modal__input-group">
-                    <label for="user-email" class="label form__label label-light">Калибр</label>
-                    <input type="text" name="userEmail" class="input" id="modal__user-cal" placeholder="7.62">
+                    <label for="user-cal" class="label form__label label-light">Калибр</label>
+                    <input type="text" name="userCal" class="input" id="modal__user-cal" placeholder="7.62">
                 </div>
                 
                 <div class="policy modal__policy">
                     <div class="modal__ceakboxes">
-                    <input type="checkbox" name="checkbox" id="modal__checkbox" class="policy__checkbox">
-                    <label for="modal__checkbox" class="policy__label">Есть номер на оружие</label>
+                    <input type="checkbox" name="checkbox" id="number" class="policy__checkbox">
+                    <label for="modal__checkbox" class="policy__label" >Есть номер на оружие</label>
                     </div>
 
                     <div class="modal__ceakboxes">
-                    <input type="checkbox" name="checkbox" id="modal__checkbox" class="policy__checkbox">
-                    <label for="modal__checkbox" class="policy__label">Числится в базе</label>
+                    <input type="checkbox" name="checkbox" id="base" class="policy__checkbox">
+                    <label for="modal__checkbox" class="policy__label" >Числится в базе</label>
                     </div>
                     
                     <div class="modal__ceakboxes">
-                    <input type="checkbox" name="checkbox" id="modal__checkbox" class="policy__checkbox">
+                    <input type="checkbox" name="checkbox" id="light" class="policy__checkbox">
                     <label for="modal__checkbox" class="policy__label">Есть засвет</label>
                     </div>
                 </div>
-                <button class="btn btn-send">Отправить заявку</button>
+                <button class="btn btn-send" type="button">Отправить</button>
             </form>
         </div>
         <!-- /.modal__dialog -->
